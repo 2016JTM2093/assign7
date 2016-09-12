@@ -12,10 +12,10 @@ for num in range(1000):
 	  d=int(abs(math.sqrt(X**2 + Y**2)))
 	  if (d==0):
 	  	cnt+=1		
-	  else:
+	  else::
   		continue
 	
 			
-k=float(float(cnt)/1000)
-k=k*100
+k1=float(float(cnt)/1000)
+k1=k*100
 print k####### write your code here ##########
