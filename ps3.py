@@ -1,20 +1,51 @@
 ###### this is the third .py file ###########
 #!/bin/python
+#!/bin/python
+
 import ast
 dict1 = {'place': 'IIT roorkee', 'city': 'Roorkee', 'state': 'Uttarakhand'}
-dict2 = {'place': 'IIT delhi', 'city': 'delhi', 'state': 'new delhi'}
-dict3 = {'place': 'IIT bombay', 'city': 'mumbai', 'state': 'maharashtra'}
+dict2 = {'place': 'IIT kanpur', 'city': 'Kanpur', 'state': 'Uttar pradesh'}
+dict3 = {'place': 'IIT mumbai', 'city': 'mumbai', 'state': 'maharashtra'}
 print dict1
 print dict2
 print dict3
 
 
-def add(dict1,dict2,dict3):       #define function for adding a field in dictionary
-    dict1.update({'name': 'pooja'})
-    dict2.update({'name': 'manpriya'})
-    dict3.update({'name': 'rohit'})
+def add(dict1,dict2,dict3):       #define the function for adding a field in dictionary
+    dict1.update({'name': 'mr. pooja'})
+    dict2.update({'name': 'mr. pulkit'})
+    dict3.update({'name': 'ms. nyati'})
     print dict1
     print dict2
     print dict3
     return
+
+def delete(dict1,dict2,dict3):    #define the function for deleting
+    dict1.clear()
+    dict2.clear()
+    dict3.clear()
+    print dict1
+    print dict2
+    print dict3
+    return
+
+def update(dict1,dict2,dict3):     #defining a function for updating
+    dict1['city'] = 'delhi'
+    dict2['state'] = 'delhi'
+    dict3['place'] = 'pg'
+    print dict1
+    print dict2
+    print dict3
+    return
+str = input("enter 1 for add, 2 for delete and 3 for update: ")
+if str == 1:
+    add(dict1,dict2,dict3)
+elif str == 2:
+    delete(dict1,dict2,dict3)
+elif str == 3:
+    update(dict1,dict2,dict3)
+else:
+    var = raw_input("address: ")
+    print var
+
 ####### write your code here ##########
