@@ -23,14 +23,16 @@ print x
 
 list= top3words(dict)
 print list
-list.sort()
-str1=list[0]
-for letter in str1
-	if str1[0] < str1[1]: #swapping according to letters in dictionary
-		temp=str1[1]
-		str1[0]=str1[0]
-		str1[0]=temp
-	else:
-		continue
-print list[0]
+word1=list[0]
+b= ''.join(sorted(word1))
+print b
+
+word2=list[1]
+w= ''.join(sorted(word2))
+print w
+word3=list[2]
+f= ''.join(sorted(word3))
+print f
+
+
 ####### write your code here ##########
